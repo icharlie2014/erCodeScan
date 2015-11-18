@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7Zx-t1-F34">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOf-GC-Q0O">
+                                <rect key="frame" x="248" y="285" width="105" height="30"/>
+                                <animations/>
+                                <state key="normal" title="点我扫描二维码"/>
+                                <connections>
+                                    <segue destination="kfl-k3-eKi" kind="show" id="83f-LJ-8Sa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZOf-GC-Q0O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4yI-bY-rnG"/>
+                            <constraint firstItem="ZOf-GC-Q0O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ntc-wd-K8G"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="glX-Lq-Xhq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="325"/>
+        </scene>
+        <!--Scan Code View Controller-->
+        <scene sceneID="Ayu-ue-ptg">
+            <objects>
+                <viewController id="kfl-k3-eKi" customClass="ScanCodeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KS3-LL-5d6"/>
+                        <viewControllerLayoutGuide type="bottom" id="GCS-Xg-s8g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JCT-3a-g1g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kub-qR-Vlq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1655" y="325"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3fK-5t-13e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Zx-t1-F34" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kvv-Ru-oWD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pVD-F4-alg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FFP-z0-uKa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201" y="325"/>
+        </scene>
+    </scenes>
+</document>
