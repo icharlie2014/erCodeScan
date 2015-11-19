@@ -79,9 +79,8 @@
         //        _label.text = obj.stringValue;
         NSLog(@"%@", obj.stringValue);
         
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:obj.stringValue message:nil preferredStyle:UIAlertControllerStyleAlert];
-        [self addChildViewController:alert];
-        [self.view addSubview:alert.view];
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:obj.stringValue message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+        [alert show];
     }
 }
 
